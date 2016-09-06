@@ -1,2 +1,2 @@
 # FilmViewerWebService
-A light film viewer service
+A light film viewer web service.
