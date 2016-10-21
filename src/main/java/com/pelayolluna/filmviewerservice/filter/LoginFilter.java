@@ -32,6 +32,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author Pelayo José Lluna González
  */
+
+// Improve with Spring Security
 public final class LoginFilter implements Filter {
 
     FilterConfig filterConfig = null;
