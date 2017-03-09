@@ -9,9 +9,9 @@ package com.pelayolluna.filmviewerservice.controllerTEST;
  *
  * @author 71677012L
  */
-public class BuscadorController {
+public class SearcherController {
     
-    public String search(String busqueda) {
+    public String search(String search) {
         
         return "test";
     }
