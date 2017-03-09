@@ -92,10 +92,6 @@ public class JFilm implements Serializable{
     public String toString() {
         return "id:" + id + ", name:" + name + ", location:" + location + ", type:" + type;
     }
-    
-    public String toJson() {
-        return "{\"id\":" + id + ",\"name\":" + name + ",\"location\":" + location + ",\"type\":" + type + "}";
-    }
 
     @Override
     public int hashCode() {
