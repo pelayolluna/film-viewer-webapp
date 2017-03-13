@@ -14,6 +14,7 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+		<javaee-api.version>7.0</javaee-api.version>
 		<spring-core.version>4.2.5.RELEASE</spring-core.version>
 		<spring-web.version>4.2.5.RELEASE</spring-web.version>
 		<spring-tx.version>4.2.5.RELEASE</spring-tx.version>
@@ -32,7 +33,7 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
+			<version>${javaee-api.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -129,13 +130,14 @@
 							<goal>copy</goal>
 						</goals>
 						<configuration>
+							<outputEncoding>${project.build.sourceEncoding}</outputEncoding>
 							<outputDirectory>${endorsed.dir}</outputDirectory>
 							<silent>true</silent>
 							<artifactItems>
 								<artifactItem>
 									<groupId>javax</groupId>
 									<artifactId>javaee-endorsed-api</artifactId>
-									<version>7.0</version>
+									<version>${javaee-api.version}</version>
 									<type>jar</type>
 								</artifactItem>
 							</artifactItems>
