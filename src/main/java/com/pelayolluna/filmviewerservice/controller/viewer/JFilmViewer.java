@@ -32,7 +32,7 @@ public class JFilmViewer {
     private final static Logger LOGGER = Logger.getLogger(JFilmViewer.class);
     private JFilmService jFilmService;
     
-    @RequestMapping(value = "/jFilmsXml", method = RequestMethod.GET, produces = "application/xml")
+    @RequestMapping(value = "/jFilms", method = RequestMethod.GET, produces = "application/json")
     private @ResponseBody JFilmList getJFilmsXml() {
 
         JFilmList result = new JFilmList();
