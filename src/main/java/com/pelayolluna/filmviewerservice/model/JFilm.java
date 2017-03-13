@@ -17,13 +17,11 @@ package com.pelayolluna.filmviewerservice.model;
 
 import java.io.Serializable;
 import java.util.Objects;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author Pelayo José Lluna González
  */
-@XmlRootElement(name="jFilm")
 public class JFilm implements Serializable{
     private static final long serialVersionUID = 1L;
     
